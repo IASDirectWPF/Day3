@@ -1,0 +1,19 @@
+﻿<Window x:Class="NW.WPF.Module08RoutedEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NW.WPF"
+        mc:Ignorable="d"
+        Title="Module08RoutedEvent" Height="450" Width="800" PreviewMouseUp="Window_MouseUp">
+    <Grid MaxWidth="500" PreviewMouseUp="Window_MouseUp" Background="Green">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel MaxWidth="200" Grid.Row="0" PreviewMouseUp="Window_MouseUp" Background="SlateBlue">
+            <Label MaxWidth="100" PreviewMouseUp="Window_MouseUp" Background="LightGray">This is a Label</Label>
+        </StackPanel>
+        <ListBox Grid.Row="1" Name="ListBoxMessages"></ListBox>
+    </Grid>
+</Window>
